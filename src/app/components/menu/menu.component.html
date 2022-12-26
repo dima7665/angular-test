@@ -1,6 +1,6 @@
 <div cdkDropList [cdkDropListData]="list" (cdkDropListDropped)="drop($event)" class="drop-list">
     <div *ngFor="let item of list" cdkDrag [cdkDragData]="item" class="drag-item">
-        {{ item | multiply: 3 }}
+        {{ item | multiply: 3 : true }}
     </div>
 </div>
 
