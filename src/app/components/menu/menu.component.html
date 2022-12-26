@@ -1,1 +1,10 @@
-<p>menu works!</p>
+<div cdkDropList [cdkDropListData]="list" (cdkDropListDropped)="drop($event)" class="drop-list">
+    <div *ngFor="let item of list" cdkDrag [cdkDragData]="item" class="drag-item">
+        {{ item | multiply: 3 }}
+    </div>
+</div>
+
+<button (click)="printList()">PRINT</button>
+
+<div capitalize>some text</div>
+<div>some text</div>
