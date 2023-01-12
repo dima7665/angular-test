@@ -9,12 +9,16 @@ import { CapitalizeDirective } from './directives/capitalize.directive';
 import { MultiplyPipe } from './pipes/multiply.pipe';
 import { ElementRefTestComponent } from './components/element-ref-test/element-ref-test.component';
 import {FormsModule} from "@angular/forms";
+import { MainComponentComponent } from './components/hooks/main-component/main-component.component';
+import { ChildComponentComponent } from './components/hooks/child-component/child-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     ElementRefTestComponent,
+    MainComponentComponent,
+    ChildComponentComponent,
   ],
     imports: [
         BrowserModule,

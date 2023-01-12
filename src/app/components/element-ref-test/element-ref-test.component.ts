@@ -16,6 +16,10 @@ export class ElementRefTestComponent implements AfterViewInit {
         return this.input.nativeElement.value || 'placeholder';
     }
 
+    public ngOnInit(): void {
+        console.log('onInit');
+    }
+
     public ngAfterViewInit(): void {
         this.isLoaded = true;
     }
